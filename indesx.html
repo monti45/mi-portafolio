@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">s
+        <input type="checkbox" class="header__checkbox" id="open.menu">
+        <label for="open.menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="../imagenes/logo-transparent.png" alt="">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#profile">about</a></li>
+                <li class="header__nav-item"><a href="#portfolio">portafolio</a></li>
+                <li class="header__nav-item"><a href="#contact">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-conteiner">
+                <img src="../imagenes/persona-signo-de-pregunta.png" class="profile__img">
+            </div>
+            <div class="profile__date-container">
+                <div class="porfile__data">
+                    <div class="profile__description">
+                        <h1>¿quien es monti?</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam eaque cumque illum perferendis asperiores maiores iusto quae illo ex corporis nesciunt esse assumenda, dolores error, ipsam commodi quaerat repellat!
+                        </p>
+                    </div>
+                    <div class="profile__skills-container">
+                        <h2>skills</h2>
+                        <ul>
+                            <li class="profile__skills">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skills-name">html</span>
+                            </li>
+                            <li class="profile__skills">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skills-name">css</span>
+                            </li>
+                            <li class="profile__skills">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--0">30%</div>
+                                </div>
+                                <span class="profile__skills-name">javascript</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">portfolio cention</h2>
+            <div class="portfolio__project-container">
+                <div class="portfolio__project">
+                    <h2 class="portafolio__project-name">project</h2>
+                </div>
+                <div class="portfolio__project">
+                    <h2 class="portafolio__project-name">project</h2>
+                </div>
+                <div class="portfolio__project">
+                    <h2 class="portafolio__project-name">project</h2>
+                </div>
+                <div class="portfolio__project">
+                    <h2 class="portafolio__project-name">project</h2>
+                </div>
+                <div class="portfolio__project">
+                    <h2 class="portafolio__project-name">project</h2>
+                </div>
+                <div class="portfolio__project">
+                    <h2 class="portafolio__project-name">project</h2>
+                </div>
+            </div>
+    </section>
+    <section class="from" id="contact">
+        <h2 class="from__tiele"> contact</h2>
+            <from class="from__from">
+                <div class="from__input-container">
+                    <label> nombre
+                        <input type="text" placeholder="john doe"></input>
+                    </label>
+                </div> 
+                <div class="from__input-container">
+                    <label> apellio
+                        <input type="text" placeholder="doe"></input>
+                    </label>
+                </div>
+                <div class="from__input-container">
+                    <label> mail
+                        <input type="text" placeholder="mail@example.com"></input>
+                    </label>
+                </div>
+                <div class="from__input-container">
+                    <label> mensaje
+                        <input type="text" placeholder="your message"></input>
+                    </label>
+                </div>
+                <div class="from__input-container">
+                        <input type="submit"></input>
+                </div>
+            </from>
+    </section>
+    <footer>
+        <strong>monti - copyright</strong>
+    </footer>
+</body>
+</html>
