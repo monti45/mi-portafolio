@@ -228,7 +228,7 @@ h1{
     min-height: 80vh;
 }
 .portfolio__project{
-    background-image: linear-gradient( #0008, #0008) , url(../imagenes/images.png);
+    background-image: linear-gradient( #0008, #0008) , url(/imagenes/images.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
