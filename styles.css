@@ -163,7 +163,7 @@ h1{
     width: 60%;
 }
 .bar--0{
-    width: 0%;
+    width: 30%;
 }
 /*--------------------profile queries--------------------*/
 
@@ -227,22 +227,31 @@ h1{
     padding: 12px;
     min-height: 80vh;
 }
-.portfolio__project{
-    background-image: linear-gradient( #0008, #0008) , url(imagenes/images.png);
+.portfolio__project {
+    background-color: #0a0a0a;
+    background-image: 
+        linear-gradient(to bottom right, rgba(10,10,10,0.8), rgba(30,40,60,0.6)),
+        url(imagenes/images.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: grid;
     place-content: center;
     border-radius: 12px;
+    transition: background-image 0.4s ease, transform 0.3s ease;
     animation: aparecer both;
     animation-timeline: view();
     animation-range: cover 1% cover 40%;
 }
-.portfolio__project:hover{
-    opacity: 0.74;
-    outline: 2px solid #fff6;
+
+/* Efecto al pasar el mouse */
+.portfolio__project:hover {
+    background-image: 
+        linear-gradient(to bottom right, rgba(30,30,40,0.7), rgba(60,70,90,0.5)),
+        url(imagenes/images.png);
+    transform: scale(1.02); /* pequeño zoom para hacerlo más dinámico */
 }
+
 /*--------------------protfolio queries--------------------*/
 @container portfolio (min-width: 56.25rem){
 .portfolio__project-container{
