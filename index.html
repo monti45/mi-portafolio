@@ -1,119 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monti Dev - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <header class="header">
-        <input type="checkbox" class="header__checkbox" id="open.menu">
-        <label for="open.menu" class="header__open-nav-button" role="button">=</label>
-        <div class="header__logo-container">
-            <img class="header__logo" src="imagenes/logo-transparent.png" alt="">
-        </div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#profile">about</a></li>
-                <li class="header__nav-item"><a href="#portfolio">portafolio</a></li>
-                <li class="header__nav-item"><a href="#contact">contacto</a></li>
+<!-- HEADER / NAV -->
+<header>
+    <div class="container nav">
+        <nav aria-label="Principal">
+            <img src=".//imagenes/logo-transparent.png" alt="Logo" class="logo-transparent">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a class="btn" href="#contacto">Hablemos</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="profile" id="profile">
-        <div class="profile__wrapper">
-            <div class="profile__img-conteiner">
-                <img src="imagenes/persona-signo-de-pregunta.png" class="profile__img">
-            </div>
-            <div class="profile__date-container">
-                <div class="porfile__data">
-                    <div class="profile__description">
-                        <h1>¿quien es monti?</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam eaque cumque illum perferendis asperiores maiores iusto quae illo ex corporis nesciunt esse assumenda, dolores error, ipsam commodi quaerat repellat!
-                        </p>
-                    </div>
-                    <div class="profile__skills-container">
-                        <h2>skills</h2>
-                        <ul>
-                            <li class="profile__skills">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--80">80%</div>
-                                </div>
-                                <span class="profile__skills-name">html</span>
-                            </li>
-                            <li class="profile__skills">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--60">60%</div>
-                                </div>
-                                <span class="profile__skills-name">css</span>
-                            </li>
-                            <li class="profile__skills">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--0">30%</div>
-                                </div>
-                                <span class="profile__skills-name">javascript</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    </div>
+</header>
+<!-- SECCIÓN INICIO -->
+<section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Hola, soy <span class="resaltar">Monti</span></h1>
+        <p class="hero-text">
+            Desarrollador web especializado en crear páginas modernas, rápidas y adaptadas a móviles.
+            Trabajo con HTML, CSS y JavaScript para diseñar sitios limpios, funcionales y listos para producción disponible.
+        </p>
+        <a href="#proyectos" class="btn hero-btn">Ver proyectos</a>
+    </div>
+</section>
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="section">
+    <h2 class="section-title">Sobre mí</h2>
+    <p class="section-text">
+        Soy un desarrollador web enfocado en crear sitios rápidos, limpios y optimizados.
+        Me especializo en HTML, CSS y JavaScript, y actualmente estoy construyendo proyectos prácticos para mejorar mis habilidades.
+    </p>
+</section>
+<!-- PROYECTOS -->
+<section id="proyectos" class="section">
+    <h2 class="section-title">Mis Proyectos</h2>
+    <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card">
+            <h3 class="project-title">Restaurante – Página Demo</h3>
+            <p class="project-description">
+                Página web moderna para restaurante, con diseño responsivo, menú, reservas y animaciones suaves.
+                Tecnologías: HTML, CSS, JavaScript.
+            </p>
+            <a href="https://shop-portafolio.firebaseapp.com/index.html#reservar" target="_blank" class="project-btn">Ver Proyecto</a>
         </div>
-    </main>
-    <section class="portfolio" id="portfolio">
-        <h2 class="portfolio__title">portfolio cention</h2>
-        <div class="portfolio__project-container">
-            <div class="portfolio__project">
-                <h2 class="portafolio__project-name">project</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portafolio__project-name">project</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portafolio__project-name">project</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portafolio__project-name">project</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portafolio__project-name">project</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portafolio__project-name">project</h2>
-            </div>
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+            <h3 class="project-title">Proyecto Informativo</h3>
+            <p class="project-description">
+                en progreso... en breve más información.
+            </p>
+            <a href="#" class="project-btn disabled">Próximamente</a>
         </div>
-    </section>
-    <section class="from" id="contact">
-        <h2 class="from__tiele"> contact</h2>
-        <form class="from__from">
-            <div class="from__input-container">
-                <label> nombre
-                    <input type="text" placeholder="john doe">
-                </label>
-            </div> 
-            <div class="from__input-container">
-                <label> apellido
-                    <input type="text" placeholder="doe">
-                </label>
-            </div>
-            <div class="from__input-container">
-                <label> mail
-                    <input type="text" placeholder="mail@example.com">
-                </label>
-            </div>
-            <div class="from__input-container">
-                <label> mensaje
-                    <input type="text" placeholder="your message">
-                </label>
-            </div>
-            <div class="from__input-container">
-                <input type="submit">
-            </div>
-        </form>
-    </section>
-    <footer>
-        <strong>monti - copyright</strong>
-    </footer>
+    </div>
+</section>
+<!-- CONTACTO -->
+<section id="contacto" class="section contacto-section">
+    <div class="contacto-container">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-text">
+            ¿Querés trabajar conmigo o tenés alguna consulta?<br>
+            Podés escribirme directo a mi correo.
+        </p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=monti.dve@gmail.com" target="_blank" class="btn contacto-btn">
+        Enviar correo
+        </a>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer>
+    © 2025 Monti — Portafolio Web. Todos los derechos reservados.
+</footer>
+<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
