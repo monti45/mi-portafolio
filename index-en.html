@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monti Dev - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header>
+    <div class="container nav">
+        <nav aria-label="Main">
+            <img src="./imagenes/logo-transparent.png" alt="Logo" class="logo-transparent">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="btn" href="#contact">Let’s Talk</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO / HOME -->
+<section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Hi, I'm <span class="resaltar">Monti</span></h1>
+        <p class="hero-text">
+            Web developer specialized in building modern, fast, and mobile-friendly websites.
+            I work with HTML, CSS, and JavaScript to create clean, functional, and production-ready sites.
+        </p>
+        <a href="#projects" class="btn hero-btn">View Projects</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+        I am a web developer focused on creating fast, clean, and optimized websites.
+        I specialize in HTML, CSS, and JavaScript, and I am currently building practical projects to improve my skills.
+    </p>
+    <p class="section-text">
+        <strong>Websites available in English and Spanish.</strong>
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3 class="project-title">Restaurant – Demo Website</h3>
+            <p class="project-description">
+                Modern restaurant website with responsive design, menu section, reservations, and smooth animations.
+                Technologies: HTML, CSS, JavaScript.
+            </p>
+            <a href="https://shop-portafolio.firebaseapp.com/index.html#reservar" target="_blank" class="project-btn">
+                View Project
+            </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3 class="project-title">Informational Project</h3>
+            <p class="project-description">
+                In progress... more information coming soon.
+            </p>
+            <a href="#" class="project-btn disabled">Coming Soon</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contacto-section">
+    <div class="contacto-container">
+        <h2 class="section-title">Let’s Talk</h2>
+        <p class="section-text">
+            Looking for a modern and functional website, or have any questions?<br>
+            Feel free to contact me directly via email.
+        </p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=monti.dve@gmail.com" target="_blank" class="btn contacto-btn">
+            Send Email
+        </a>
+        <p>or write to <strong>monti.dve@gmail.com</strong></p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Monti — Web Portfolio. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
